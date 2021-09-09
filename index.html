@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Gulp pack for easy html/php markup development">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="@@favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="@@favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="@@favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Easy-webdev-startpack v3.0</title>
+</head>
+
+
+<body>
+
+<main class="main">
+  <div class="main-wrapper">
+    <h2 class="main__title">
+      <span>Рассчитай точную стоимость ремонта</span>
+      <p>получи скидку <b>15%*</b></p>
+    </h2>
+    <ul class="main-list">
+      <li class="main-list__item present">
+        <img src="./img/present.svg" alt="">
+        <span>Подарок <br> за заполнение</span></li>
+      <li class="main-list__item time">
+        <img src="./img/time.svg" alt="">
+        <span>Время расчёта <br> - 5 минут</span>
+      </li>
+      <li class="main-list__item cost">
+        <img src="./img/cost.svg" alt="">
+        <span>Точная <br> стоимость</span>
+      </li>
+    </ul>
+    <div class="main__form form">
+      <div class="form-contour">
+        <img class="main-bg" src="./img/main-bg.svg" alt="">
+        <img class="decoration  phone" src="./img/phone.svg" alt="">
+        <img class="decoration employee" src="./img/employee.svg" alt="Наш сотрудник">
+        <div class="mobile-bg">
+          <img src="./img/present-mob.svg" alt="decoration">
+        </div>
+        <!--      content that i hide on click  FIRST SCREEN -->
+        <div class="content">
+          <h3 class="title">Какой автомобиль будем ремонтировать?</h3>
+          <ul class="content__list">
+            <li class="content__list-item">
+              <img class="kia" src="https://autoritm-service.ru/img/calc-brand3.png" alt="Kia">
+            </li>
+            <li class="content__list-item">
+              <img class="mazda" src="https://autoritm-service.ru/img/calc-brand4.png" alt="Mazda">
+            </li>
+            <li class="content__list-item">
+              <img class="volvo" src="https://autoritm-service.ru/img/calc-brand8.png" alt="Volvo">
+            </li>
+            <li class="content__list-item">
+              <img class="ford" src="https://autoritm-service.ru/img/calc-brand1.png" alt="Ford">
+            </li>
+            <li class="content__list-item">
+              <img class="volkswagen" src="https://autoritm-service.ru/img/calc-brand5.png" alt="Volkswagen">
+            </li>
+            <li class="content__list-item">
+              <img class="renault" src="https://autoritm-service.ru/img/calc-brand6.png" alt="Renault">
+            </li>
+            <li class="content__list-item">
+              <img class="hyundai" src="https://autoritm-service.ru/img/calc-brand2.png" alt="Hyundai">
+            </li>
+            <li class="content__list-item">
+              <img class="mitsubishi" src="https://autoritm-service.ru/img/calc-brand7.png" alt="Mitsubishi">
+            </li>
+            <li class="content__list-item">
+              <div class="inner-mark">
+                <p>Другая</p>
+                <p>марка</p>
+              </div>
+            </li>
+          </ul>
+          <div class="content__help-text">
+            Добрый день!
+            Я Андрей -
+            старший мастер.
+            Сегодня буду
+            Вашим
+            консультантом
+          </div>
+        </div>
+        <!--      content that i hide on click  SECOND SCREEN-->
+        <form class="content-form" action="#" method="get">
+          <div class="content-form__inner">
+            <h3 class="content-form__title">
+              Что будем ремонтировать? Выберите
+              услуги или опишите неисправность.
+            </h3>
+            <div class="content-form__body">
+              <input id="input1" class="content-form__input" type="text"/>
+              <label for="input1" class="content-form__input-cursor"></label>
+
+              <ul class="content-form__checkbox-list">
+                <li class="content-form__checkbox-list-item">
+                  <input id="checkbox1" class="content-form__checkbox" type="checkbox">
+                  <label for="checkbox1" class="content-form__checkbox-list-label">
+                    Замена моторного масла
+                  </label>
+                <li class="content-form__checkbox-list-item">
+                  <input id="checkbox2" class="content-form__checkbox" type="checkbox">
+                  <label for="checkbox2" class="content-form__checkbox-list-label">
+                    Диагностика ходовой - <span>бесплатно*</span>
+                  </label>
+                </li>
+                <li class="content-form__checkbox-list-item">
+                  <input id="checkbox3" class="content-form__checkbox" type="checkbox">
+                  <label for="checkbox3" class="content-form__checkbox-list-label">
+                    Техническое обслуживание
+                  </label>
+                </li>
+                <li class="content-form__checkbox-list-item">
+                  <input id="checkbox4" class="content-form__checkbox" type="checkbox">
+                  <label for="checkbox4" class="content-form__checkbox-list-label">
+                    Замена ГРМ
+                  </label>
+                </li>
+              </ul>
+
+              <footer class="content-form__footer">
+                <button class="content-form__footer-button back">НАЗАД</button>
+                <button class="content-form__footer-button check-price">УЗНАТЬ СТОИМОСТЬ</button>
+              </footer>
+              <div class="content__help-text second">
+                С автомобилями
+                марки <span class="mark-name">Ford</span> мы
+                работаем с 1989 г.
+                Опыт и дилерское
+                оборудование
+                позволяют нам
+                справляться даже
+                с нестандартными
+                задачами!
+              </div>
+            </div>
+          </div>
+          <!--      content that i hide on click  THEERD SCREEN-->
+          <div class="content-form__inner-success">
+            <h3 class="content-form__title">
+              Стоимость ремонта рассчитана! <br>
+              Укажите телефон, чтобы я отправил <br>
+              СМС-купон на <span>скидку 15%</span> и
+              проконсультировал по стоимости
+            </h3>
+            <div class="content-form__input-wrapper">
+              <input id="input2" class="content-form__input" type="text"/>
+              <label for="input2" class="content-form__input-cursor"></label>
+            </div>
+            <ul class="content-form__checkbox-list">
+              <li class="content-form__checkbox-list-item">
+                <input id="checkbox5" class="content-form__checkbox" type="checkbox" checked>
+                <label for="checkbox5" class="content-form__checkbox-list-label">
+                  Нажимая на кнопку я даю разрешение на обработки
+                  личных данных
+                </label>
+              </li>
+            </ul>
+
+            <footer class="content-form__footer">
+              <button class="content-form__footer-button go-back">НАЗАД</button>
+              <button class="content-form__footer-button check-cost">УЗНАТЬ СТОИМОСТЬ</button>
+            </footer>
+          </div>
+          <!--          Four Screen-->
+          <div class="content-form__thanks-page">
+            <h3 class="content-form__title">
+              Ваша заявка принята! <br>
+              В течение 5-ти минут мы отправим <br>
+              Вам СМС-купон на скидку, а также <br>
+              свяжемся для консультации.
+            </h3>
+          </div>
+        </form>
+        <div class="body-line">
+          <div class="body-line__indicator"></div>
+          <div class="body-line__text">
+            <p>остался 1 вопрос до скидки* <span>15%</span></p>
+          </div>
+        </div>
+        <span class="bottom-text">*скидка действует только для новых клиентов техцентра</span>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>
